@@ -20,4 +20,4 @@ jobs:
           cache: maven
 
       - name: Sedang Test pakai Maven
-        run: mvn test -Dtest=CalulatorTest
+        run: mvn test -Dtest=CalculatorTest
