@@ -1,0 +1,23 @@
+name: Java CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sedang Checkout
+        uses: actions/checkout@v5
+
+      - name: Sedang Setup Java
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Sedang Test pakai Maven
+        run: mvn test
