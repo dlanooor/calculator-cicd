@@ -1,4 +1,4 @@
-name: Java CI
+name: Java CI 2
 
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
           cache: maven
 
       - name: Sedang Test pakai Maven
-        run: mvn test -Dtest=CalulatorTest
+        run: mvn test -Dtest=CalculatorFailedTest
